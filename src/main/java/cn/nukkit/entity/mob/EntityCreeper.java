@@ -55,7 +55,7 @@ public class EntityCreeper extends EntityMob {
     @Override
     protected void initEntity() {
         super.initEntity();
-
+        this.setMaxHealth(20);
         if (this.namedTag.getBoolean("powered") || this.namedTag.getBoolean("IsPowered")) {
             this.dataProperties.putBoolean(DATA_POWERED, true);
         }
@@ -72,6 +72,8 @@ public class EntityCreeper extends EntityMob {
         pk.speedX = (float) this.motionX;
         pk.speedY = (float) this.motionY;
         pk.speedZ = (float) this.motionZ;
+        pk.yaw = (float) this.yaw;
+        pk.pitch = (float) this.pitch;
         pk.metadata = this.dataProperties;
         player.dataPacket(pk);
 
