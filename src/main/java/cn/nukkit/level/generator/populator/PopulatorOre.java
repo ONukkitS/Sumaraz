@@ -1,5 +1,6 @@
 package cn.nukkit.level.generator.populator;
 
+import cn.nukkit.block.Block;
 import cn.nukkit.level.ChunkManager;
 import cn.nukkit.level.generator.object.ore.ObjectOre;
 import cn.nukkit.level.generator.object.ore.OreType;
@@ -11,6 +12,7 @@ import cn.nukkit.math.NukkitRandom;
  * Nukkit Project
  */
 public class PopulatorOre extends Populator {
+    //private final int replaceId;
     private OreType[] oreTypes = new OreType[0];
 
     @Override

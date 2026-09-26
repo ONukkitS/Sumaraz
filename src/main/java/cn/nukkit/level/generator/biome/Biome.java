@@ -24,6 +24,7 @@ public abstract class Biome {
     public static final int TAIGA = 5;
     public static final int SWAMP = 6;
     public static final int RIVER = 7;
+    public static final int HELL = 8;
 
     public static final int ICE_PLAINS = 12;
 

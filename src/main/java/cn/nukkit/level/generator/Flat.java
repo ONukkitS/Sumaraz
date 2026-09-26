@@ -3,6 +3,7 @@ package cn.nukkit.level.generator;
 import cn.nukkit.Server;
 import cn.nukkit.block.*;
 import cn.nukkit.level.ChunkManager;
+import cn.nukkit.level.Level;
 import cn.nukkit.level.format.FullChunk;
 import cn.nukkit.level.generator.biome.Biome;
 import cn.nukkit.level.generator.object.ore.OreType;
@@ -25,6 +26,11 @@ public class Flat extends Generator {
     @Override
     public int getId() {
         return TYPE_FLAT;
+    }
+
+    @Override
+    public int getDimension() {
+        return Level.DIMENSION_OVERWORLD;
     }
 
     private ChunkManager level;

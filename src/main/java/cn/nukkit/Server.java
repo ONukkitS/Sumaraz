@@ -47,10 +47,7 @@ import cn.nukkit.network.CompressBatchedTask;
 import cn.nukkit.network.Network;
 import cn.nukkit.network.RakNetInterface;
 import cn.nukkit.network.SourceInterface;
-import cn.nukkit.network.protocol.BatchPacket;
-import cn.nukkit.network.protocol.CraftingDataPacket;
-import cn.nukkit.network.protocol.DataPacket;
-import cn.nukkit.network.protocol.PlayerListPacket;
+import cn.nukkit.network.protocol.*;
 import cn.nukkit.network.query.QueryHandler;
 import cn.nukkit.network.rcon.RCON;
 import cn.nukkit.permission.BanEntry;
@@ -1093,7 +1090,7 @@ public class Server {
     }
 
     public String getName() {
-        return "Nukkit";
+        return Nukkit.NUKKIT;
     }
 
     public boolean isRunning() {
@@ -1109,7 +1106,7 @@ public class Server {
     }
 
     public String getVersion() {
-        return Nukkit.MINECRAFT_VERSION;
+        return ProtocolInfo.MAIN_MINECRAFT_VERSION;
     }
 
     public String getApiVersion() {

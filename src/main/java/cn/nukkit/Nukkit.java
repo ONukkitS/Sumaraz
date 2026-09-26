@@ -23,10 +23,13 @@ import cn.nukkit.utils.ServerKiller;
  */
 public class Nukkit {
 
-    public final static String VERSION = "1.0dev";
+    public final static String NUKKIT = "Nukkit";
+    public final static String VERSION = "1.1dev";
     public final static String API_VERSION = "1.0.0";
     public final static String CODENAME = "Sumaraz(Summer)";
+    @Deprecated
     public final static String MINECRAFT_VERSION = "v0.15.10 alpha";
+    @Deprecated
     public final static String MINECRAFT_VERSION_NETWORK = "0.15.10";
 
     public final static String PATH = System.getProperty("user.dir") + "/";

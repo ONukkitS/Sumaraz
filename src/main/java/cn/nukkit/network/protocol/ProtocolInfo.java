@@ -2,6 +2,7 @@ package cn.nukkit.network.protocol;
 
 import com.google.common.primitives.Ints;
 
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -17,6 +18,12 @@ public interface ProtocolInfo {
 
     List<Integer> ACCEPTED_PROTOCOLS = Ints.asList(
             81, 82, 83, 84
+    );
+
+    String MAIN_MINECRAFT_VERSION = "0.15.x";
+    String MINECRAFT_VERSION_NETWORK = "0.15.0";
+    List<String> MINECRAFT_VERSION = Arrays.asList(
+            "0.15.0", "0.15.4", "0.15.9", "0.15.10"
     );
 
     byte LOGIN_PACKET = (byte) 0x01;
