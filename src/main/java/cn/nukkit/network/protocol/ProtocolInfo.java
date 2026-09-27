@@ -21,7 +21,7 @@ public interface ProtocolInfo {
     );
 
     String MAIN_MINECRAFT_VERSION = "0.15.x";
-    String MINECRAFT_VERSION_NETWORK = "0.15.0";
+    String MINECRAFT_VERSION_NETWORK = "0.15";
     List<String> MINECRAFT_VERSION = Arrays.asList(
             "0.15.0", "0.15.4", "0.15.9", "0.15.10"
     );
